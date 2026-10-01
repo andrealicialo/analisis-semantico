@@ -1,0 +1,48 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9a428569-11d5-4dcf-a9fe-7f0de394b301</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Actividad13AnalisisSemantico.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Actividad13AnalisisSemantico</Name>
+    <RootNamespace>Actividad13AnalisisSemantico</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Actividad13AnalisisSemantico.py" />
+    <Compile Include="ejercicio_1_tabla_simbolos.py" />
+    <Compile Include="ejercicio_2_tipos.py" />
+    <Compile Include="ejercicio_3_tokens_atributos.py" />
+    <Compile Include="ejercicio_4_codigo_intermedio.py" />
+    <Compile Include="ejercicio_5_acciones_semanticas.py" />
+    <Compile Include="ejercicio_6_bloque_completo.py" />
+    <Compile Include="ejercicio_7_if_else.py" />
+    <Compile Include="ejercicio_8_while.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="README.md" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
